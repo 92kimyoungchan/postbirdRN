@@ -1,0 +1,10 @@
+<svg id="delete_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <circle id="타원_1000" data-name="타원 1000" cx="9" cy="9" r="9" style="fill:#8d8f91"/>
+    <path id="선_46" data-name="선 46" class="cls-2" transform="rotate(-135 9 3.728)" d="M0 0h10"/>
+    <path id="선_48" data-name="선 48" class="cls-2" transform="rotate(-45 18.072 -.174)" d="M0 0h10"/>
+</svg>

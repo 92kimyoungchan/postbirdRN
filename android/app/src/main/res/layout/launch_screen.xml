@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="121dp"
+    android:background="#272b30"
+    android:paddingBottom="121dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소중함을 되찾으세요!"
+        android:textColor="#8d8f91"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:fontFamily="@font/applesdgothicneor"
+        android:textSize="16sp"
+        android:lineSpacingExtra="5sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/applesdgothicneob"
+        android:text="포스트버드로\n마음을 전달해볼까요?"
+        android:textColor="#ffffff"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="28sp"
+        android:lineSpacingExtra="6sp"
+        />
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:contentDescription="Splashscreen"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background_splash" />
+
+</LinearLayout>
+
