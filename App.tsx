@@ -11,14 +11,14 @@
 import React, {useEffect, useState, useRef} from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import {useColorScheme, Text} from 'react-native';
-import { store, persistor } from '/store';
+import {store, persistor} from './src/store';
 import {setSiblingWrapper, RootSiblingParent} from 'react-native-root-siblings';
 import {enableScreens} from 'react-native-screens';
 import {darkTheme, lightTheme} from './src/theme/themeType';
 import {QueryClientProvider, QueryClient} from 'react-query';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {Provider as ReduxProvider} from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
+import {PersistGate} from 'redux-persist/integration/react';
 import {makeStore} from './src/redux';
 import {NavigationContainer} from '@react-navigation/native';
 
@@ -37,7 +37,7 @@ declare module '@react-navigation/native' {
   };
   export function useTheme(): ExtendedTheme;
 }
-const LoadingView = () => <Text>Loading...</Text>
+const LoadingView = () => <Text>Loading...</Text>;
 
 export default function App() {
   enableScreens();
@@ -60,11 +60,11 @@ export default function App() {
         <QueryClientProvider client={queryClient}>
           <ReduxProvider store={store}>
             <PersistGate loading={LoadingView} persistor={persistor}>
-            <NavigationContainer
-              theme={scheme === 'dark' ? darkTheme : lightTheme}
-              ref={navigationRef}>
-              <AppNavigator />
-            </NavigationContainer>
+              <NavigationContainer
+                theme={scheme === 'dark' ? darkTheme : lightTheme}
+                ref={navigationRef}>
+                <AppNavigator />
+              </NavigationContainer>
             </PersistGate>
           </ReduxProvider>
         </QueryClientProvider>
