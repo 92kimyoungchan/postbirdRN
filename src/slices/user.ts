@@ -12,26 +12,23 @@ interface addressInfo {
   postcode: string;
 }
 
-export interface UserState {
-  user: User | null;
-}
-const initialState: UserState = {
-  user: {
+
+const initialState: User = {
     nickname: '',
     addressInfo: {
       address: '',
       addressDetail: '',
       postcode: '',
     },
-  },
 };
 
 const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    authorize(state, action: PayloadAction<User>) {
-      state.user = action.payload;
+    authorize(state: User, action: PayloadAction<User>) {
+      state.nickname = action.payload.nickname;
+      state.addressInfo = action.payload.addressInfo;
     },
     logout() {
       return initialState;

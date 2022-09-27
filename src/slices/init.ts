@@ -1,39 +1,27 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
-export interface User {
+export interface Init {
   /** 내부저장소로 실제 사용할 값 */
-  nickname: string;
-  addressInfo: addressInfo;
+  themeScheme: string;
+  language: string;
 }
 
-interface addressInfo {
-  address: string;
-  addressDetail: string;
-  postcode: string;
-}
 
-export interface UserState {
-  user: User | null;
-}
-const initialState: UserState = {
-  user: {
-    nickname: '',
-    addressInfo: {
-      address: '',
-      addressDetail: '',
-      postcode: '',
-    },
-  },
+
+const initialState: Init = {
+  themeScheme: 'dark' || 'light' || 'system',
+  language: 'eng' || 'kr',
 };
 
 const initSlice = createSlice({
   name: 'init',
   initialState,
   reducers: {
-    authorize(state, action: PayloadAction<User>) {
-      state.user = action.payload;
+    init(state: Init, action: PayloadAction<Init>) {
+      state.themeScheme = action.payload.themeScheme;
+      state.language = action.payload.language;
     },
-    logout() {
+    initialize() {
       return initialState;
     },
   },
