@@ -11,7 +11,7 @@ const persistConfig: PersistConfig<ReducerState> = {
   // redux-persist에 내장되어 있는 localstorage 또는 sessionStorage를 import해 사용 할 수도 있습니다.
   // 반드시 storage를 입력해 주어야 합니다.
   storage: AsyncStorage,
-  whitelist: ['user'], // persist store에 저장 할 reducer들
+  whitelist: ['user', 'init'], // persist store에 저장 할 reducer들
   // blacklist: [''], // persist store에 저장하지 않을 reducer들
 };
 

@@ -1,0 +1,21 @@
+export default {
+    basic1: "#C3C3C3",
+    basic1_2: "#E7E7E7",
+    basic2: "#7F7E7E",
+    basic3: "#181311",
+    basic4: "#FAECEC",
+    basic5: "#FEDCDC",
+    basic6: "#FFA9A9",
+    basic7: "#FFFFFF",
+    primary: "rgba(255, 105, 107, 0.67)",
+    primary1: "#FF696B",
+    primary2: "#FFCB69",
+    primary3: "#FFE36B",
+    secondary: "#4890B4",
+    secondary2: "#1B4960",
+    secondary3: "#686BFF",
+    secondary4: "#1F133F",
+    accents: "#FFAC65",
+    accents2: "#FF6C55",
+  };
+  
